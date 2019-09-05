@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Fat</title>
+
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<h1>Snake Fat</h1>
+	<div class="newGame button">New Game</div>
+	<div class="score">Score: 100 || Foods: 0</div>
+	<div class="board"></div>
+
+	<div class="speed"></div>
+	<div class="playAgain button">Play again?</div>
+
+	<div class="touchInput"><img id="fingerprint" src="fingerprint.svg"></div>
+
+<!-- 	<div class="mobileControls">
+		<div class="leftButton"><p>&#10140;</p></div>
+		<div class="upDownContainer">
+			<div class="upButton"><p>&#10140;</p></div>
+			<div class="downButton"><p>&#10140;</p></div>
+		</div>
+		<div class="rightButton"><p>&#10140;</p></div>
+	</div> -->
+
+	<script src="js/game.js"></script>	<!-- creates board, interval, interaction -->
+	<script src="js/board.js"></script>	<!-- contains spaces & snake -->
+	<script src="js/space.js"></script>
+	<script src="js/snake.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

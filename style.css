@@ -1,0 +1,126 @@
+:root {
+	--black: #151515; /*#002201*/
+	--food: #09c909; /*#ff1a75*/
+	--snake: #ff9800;
+	--lightGray: #9e9e9e; /*#2d6c2d*/
+	--darkGray: #333; /*#0e320f*/
+}
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	background: var(--darkGray);
+	font-family: sans-serif;
+	color: #eee;
+	letter-spacing: .05em;
+	position: relative;
+	text-align: center;
+}
+h1 {
+	font-family: 'Bungee', cursive;
+	letter-spacing: .125em;
+	line-height: 1em;
+	text-align: center;
+	color: var(--lightGray);
+	text-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+.button {
+	padding: .75em 1em;
+	background: #555;
+	border-radius: 3px;
+	width: 10em;
+	text-align: center;
+	margin: 40px auto;
+	box-shadow: 0 3px 5px rgba(0,0,0,.125);
+	cursor: pointer;
+	transition: .5s ease all;
+}
+.button:hover {
+	background: var(--snake);
+}
+.newGame {
+	margin-top: 200px;
+}
+.playAgain {
+	position: absolute;
+    margin-top: 325px;
+    top: 0;
+    left: 50%;
+    margin-left: -5em;
+    width: 10em;
+    display: none;
+}
+.score {
+	color: orange;
+	width: 20em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+.board {
+	width: 340px;
+	height: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 3px; 
+	background: var(--black);
+	font-size: 0;
+	display: none;
+}
+.space {
+	width: 17px;
+	height: 17px;
+	border: 1px solid rgba(255,255,255,.025);
+	display: inline-block;
+	margin: 0;
+}
+.snake {
+	background: var(--snake);
+	border-radius: 3px;
+}
+.food {
+	background: var(--food); /* #f31aff; */
+	border-radius: 10px;
+	border: 3px solid var(--black);
+}
+.speed {
+	color: var(--snake);
+	margin-top: 20px;
+	display: none;
+}
+.touchInput {
+	width: 90%;
+	height: 170px;
+	margin: 20px auto 0 auto;
+	border-radius: 3px;
+	background: #222;
+	box-shadow: inset 3px 3px 5px rgba(0,0,0,.1);
+	display: none;
+}
+#fingerprint {
+	width: 75px;
+	margin-top: 15%;
+    opacity: .05;
+}
+
+@media screen AND (min-width: 400px) {
+	h1 {
+		line-height: initial;
+	}
+	.board {
+		width: 420px;
+		height: 420px;
+	}
+	.space {
+		width: 21px;
+		height: 21px;
+	}
+	.touchInput {
+		display: none !important;
+	}
+}
