@@ -39,10 +39,12 @@ class Game {
 	}
 
 	handleTouchstart(e) {
+		e.preventDefault();
 		this.touchstart = [e.touches[0].clientX, e.touches[0].clientY];
 	}
 
 	handleTouchend(e) {
+		e.preventDefault();
 		let deltaX = e.changedTouches[0].clientX - this.touchstart[0];
 		let deltaY = e.changedTouches[0].clientY - this.touchstart[1];
 
