@@ -48,11 +48,11 @@ class Game {
 		let deltaX = e.changedTouches[0].clientX - this.touchstart[0];
 		let deltaY = e.changedTouches[0].clientY - this.touchstart[1];
 
-		// console.log(`Change in X: ${deltaX} | Change in Y: ${deltaY}`);
+		console.log(`Change in X: ${deltaX} | Change in Y: ${deltaY}`);
 		if (Math.abs(deltaX) > Math.abs(deltaY)) {
 			(deltaX > 0) ? this.snake.changeDirection('right') : this.snake.changeDirection('left');
 		} else {
-			(deltaX > 0) ? this.snake.changeDirection('up') : this.snake.changeDirection('down');
+			(deltaY > 0) ? this.snake.changeDirection('down') : this.snake.changeDirection('up');
 		}
 
 		this.touchstart = null;
