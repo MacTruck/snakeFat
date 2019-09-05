@@ -23,6 +23,7 @@ h1 {
 	font-family: 'Bungee', cursive;
 	letter-spacing: .125em;
 	line-height: 1em;
+	margin-bottom: 0;
 	text-align: center;
 	color: var(--lightGray);
 	text-shadow: 0 10px 20px rgba(0,0,0,.25);
@@ -117,6 +118,7 @@ h1 {
 @media screen AND (min-width: 400px) {
 	h1 {
 		line-height: initial;
+		margin-bottom: inherit;
 	}
 	.board {
 		width: 420px;
