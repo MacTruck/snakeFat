@@ -94,6 +94,7 @@ h1 {
 	display: none;
 }
 .touchInput {
+	touch-action: none;
 	width: 90%;
 	height: 170px;
 	margin: 20px auto 0 auto;
