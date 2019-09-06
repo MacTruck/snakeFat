@@ -3,6 +3,7 @@ const score = document.querySelector('.score');
 const board = document.querySelector('.board');
 const newGameButton = document.querySelector('.newGame');
 const playAgain = document.querySelector('.playAgain');
+const touchHolder = document.querySelector('.touchHolder');
 const touchInput = document.querySelector('.touchInput');
 
 newGameButton.addEventListener('click', () => {
@@ -10,7 +11,7 @@ newGameButton.addEventListener('click', () => {
 	newGameButton.style.display = 'none';
 	score.style.display = 'block';
 	board.style.display = 'block';
-	touchInput.style.display = 'block';
+	touchHolder.style.display = 'block';
 });
 
 playAgain.addEventListener('click', () => game.reset());
